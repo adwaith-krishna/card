@@ -110,7 +110,7 @@ Game.prototype.hideAll = function() {
 Game.prototype.peek = function () {
     // peeking should punish the score
     this.nrOfMovesMade += 4;
-    this.score.text = 'SCORE: ' + this.nrOfMovesMade;
+    this.score.text = 'Moves: ' + this.nrOfMovesMade;
     // show all the cards
     this.showAll();
     // after 1 second hide them again
