@@ -6,7 +6,7 @@
  */
 function EndScreen(canvas, score) {
     this.canvas                 =   canvas;
-    this.message                =   new PIXI.Text("YOUR SCORE:", STYLE);
+    this.message                =   new PIXI.Text("MOVES:", STYLE);
     this.endScore               =   new PIXI.Text(score, STYLE);
     this.retryBtn               =   PIXI.Sprite.fromImage(PATHS.retryBtn);
     this.elements               =   [this.message, this.endScore, this.retryBtn];
