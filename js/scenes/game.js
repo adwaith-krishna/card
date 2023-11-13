@@ -367,8 +367,8 @@ Game.prototype.switchTwoCards = function() {
  * @return undefined
  */
 Game.prototype.randomEvent = function() {
-    const MIN   =   5 * 1000;
-    const MAX   =   10 * 1000;
+    const MIN   =   2 * 1000;
+    const MAX   =   3 * 1000;
     let gameIsOver = false; // move this to scope that can be accessed
 
     // generate random time between MIN seconds and MAX seconds
