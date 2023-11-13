@@ -18,7 +18,7 @@ function Game(canvas) {
     this.paused                 = false;
     this.nrOfMovesMade          = 0;
     this.cardContainer          = new PIXI.Container();
-    this.score                  = new PIXI.Text('SCORE: ' + this.nrOfMovesMade, STYLE);
+    this.score                  = new PIXI.Text('MOVES: ' + this.nrOfMovesMade, STYLE);
     this.flipSound              = new Audio(PATHS.flipSound);
     this.successSound           = new Audio(PATHS.successSound);
     this.successSound.volume    = 0.1;
@@ -181,7 +181,7 @@ Game.prototype.removeCards = function (card, prevClickedCard) {
 Game.prototype.resetCards = function(card, prevClickedCard) {
     // freeze input to cards while reseting
     this.allowFlip = false;
-    this.score.text = 'SCORE: ' + this.nrOfMovesMade++;
+    this.score.text = 'MOVES: ' + this.nrOfMovesMade++;
 
     setTimeout(() => {
         card.flipBack();
