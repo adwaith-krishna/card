@@ -23,8 +23,8 @@ function SettingsScreen(canvas) {
     this.checkmark = new Checkmark(innerWidth/2, this.valueText.y + 270, canvas);
 
     this.backBtn = new PIXI.Text('SAVE', ALT_STYLE);
-    this.backBtn.y = this.checkmark.y + 200;
-    this.backBtn.x = innerWidth/2 - (this.backBtn.width/2)+200;
+    this.backBtn.y = this.checkmark.y + 400;
+    this.backBtn.x = innerWidth/2 - (this.backBtn.width/2);
     this.backBtn.interactive = true;
     this.backBtn.buttonMode = true;
 
